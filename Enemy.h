@@ -11,7 +11,7 @@ class Enemy
 	char symbol;
 	bool active;
 
-	public:
+public:
 	Enemy( int, int, int );
 	~Enemy();
 

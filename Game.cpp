@@ -98,7 +98,7 @@ void Game::Update()
 
 	// Player picks up the Gem
 	if ( ( e1->isActive() && e2->isActive() ) &&
-		 ( p.getP() >= d.getX() - RADIUS && p.getP() <= d.getX() + RADIUS ) &&
+		( p.getP() >= d.getX() - RADIUS && p.getP() <= d.getX() + RADIUS ) &&
 		 ( p.getQ() >= d.getY() - RADIUS && p.getQ() <= d.getY() + RADIUS ) )
 	{
 		// Increment score by 1
@@ -122,11 +122,11 @@ void Game::Update()
 	// Player gets hit by Enemy 1 or Enemy 2
 	if ( ( e1->isActive() &&
 		( p.getP() >= e1->getX() - RADIUS && p.getP() <= e1->getX() + RADIUS ) &&
-		( p.getQ() >= e1->getY() - RADIUS && p.getQ() <= e1->getY() + RADIUS ) ) ||
+		 ( p.getQ() >= e1->getY() - RADIUS && p.getQ() <= e1->getY() + RADIUS ) ) ||
 
-		( e2->isActive() &&
-		( p.getP() >= e2->getX() - RADIUS && p.getP() <= e2->getX() + RADIUS ) &&
-		( p.getQ() >= e2->getY() - RADIUS && p.getQ() <= e2->getY() + RADIUS ) ) )
+		 ( e2->isActive() &&
+		 ( p.getP() >= e2->getX() - RADIUS && p.getP() <= e2->getX() + RADIUS ) &&
+		 ( p.getQ() >= e2->getY() - RADIUS && p.getQ() <= e2->getY() + RADIUS ) ) )
 	{
 		// Player loses a life and resets
 		p.die();

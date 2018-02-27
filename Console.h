@@ -36,7 +36,7 @@ namespace System
 		// Display a Unicode symbol.
 		static void Show( wchar_t symbol );
 
-		public:
+	public:
 		// Get the current foreground color
 		static WORD ForegroundColor();
 
@@ -106,7 +106,7 @@ namespace System
 	{
 		long long freq, start;
 
-		public:
+	public:
 		PC( bool go );
 		void Start();
 		double Finish() const;

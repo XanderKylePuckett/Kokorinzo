@@ -72,7 +72,7 @@ namespace System
 		if ( rows < 1 || rows > c.Y )
 			rows = c.Y;
 
-		SMALL_RECT dim = { 0, 0, (short)columns - 1, (short)rows - 1 };
+		SMALL_RECT dim = { 0, 0, ( short )columns - 1, ( short )rows - 1 };
 		SetConsoleWindowInfo( out, TRUE, &dim );
 	}
 

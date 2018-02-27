@@ -16,7 +16,7 @@ class Game
 	bool debugMode;
 	bool secrets;
 
-	public:
+public:
 	Game();
 	~Game();
 
@@ -34,7 +34,7 @@ class Game
 
 	bool isSecrets() const;
 
-	private:
+private:
 	void ShowDebug() const;
 	void DrawScore() const;
 	void HighScores();

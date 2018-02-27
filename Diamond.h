@@ -14,7 +14,7 @@ class Diamond
 
 	int diamondResets;
 
-	public:
+public:
 	Diamond();
 	~Diamond();
 

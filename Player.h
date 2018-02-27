@@ -18,7 +18,7 @@ class Player
 
 	bool godMode;
 
-	public:
+public:
 	Player();
 	~Player();
 
@@ -41,7 +41,7 @@ class Player
 
 	void EndGame();
 
-	private:
+private:
 	void ResetPlayer();
 };
 
